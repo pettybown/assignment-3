@@ -6,6 +6,9 @@ public class MyLinkedListQueue<T> extends MyLinkedList {
     MyLinkedListQueue() {
         myLinkedList = new MyLinkedList<>();
     }
+    public void enqueue(T element) {
+        myLinkedList.add(element);
+    }
     public int size() {
         return myLinkedList.size();
     }
