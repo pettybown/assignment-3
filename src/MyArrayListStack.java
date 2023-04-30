@@ -1,5 +1,5 @@
 package src;
-
+import java.util.EmptyStackException;
 public class MyArrayListStack extends MyArrayList {
     MyArrayList myArrayList;
 
@@ -14,6 +14,12 @@ public class MyArrayListStack extends MyArrayList {
     }
     public int size() {
         return myArrayList.size();
+    }
+    public Object pop() {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return myArrayList.remove(0);
     }
 
 
