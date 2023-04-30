@@ -11,4 +11,10 @@ public class MyLinkedListStack<T> extends MyLinkedList {
     public boolean isEmpty() {
         return myLinkedList.size() == 0;
     }
+    public T pop() {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return (T) myLinkedList.remove(0);
+    }
 }
