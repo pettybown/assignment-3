@@ -1,7 +1,7 @@
 package src;
 import java.util.EmptyStackException;
 public class MyLinkedListStack<T> extends MyLinkedList {
-    private MyLinkedList<T> myLinkedList;
+    MyLinkedList<T> myLinkedList;
     MyLinkedListStack() {
         myLinkedList = new MyLinkedList<>();
     }
@@ -22,5 +22,8 @@ public class MyLinkedListStack<T> extends MyLinkedList {
             throw new EmptyStackException();
         }
         return (T) myLinkedList.get(0);
+    }
+    public int size() {
+        return myLinkedList.size();
     }
 }
