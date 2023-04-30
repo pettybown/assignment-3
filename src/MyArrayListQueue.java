@@ -5,4 +5,7 @@ public class MyArrayListQueue extends MyArrayList{
     MyArrayListQueue() {
         myArrayList = new MyArrayList();
     }
+    public void enqueue(Object element) {
+        myArrayList.add(element);
+    }
 }
