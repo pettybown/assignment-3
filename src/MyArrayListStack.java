@@ -6,5 +6,9 @@ public class MyArrayListStack extends MyArrayList {
     MyArrayListStack() {
         myArrayList = new MyArrayList();
     }
+    public void push(Object element) {
+        myArrayList.add(element, 0);
+    }
+
 
 }
