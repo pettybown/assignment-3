@@ -6,6 +6,10 @@ public class MyArrayListStack extends MyArrayList {
     MyArrayListStack() {
         myArrayList = new MyArrayList();
     }
+    /**
+     Adds an element to the top of the stack.
+     @param element The element to be added.
+     */
     public void push(Object element) {
         myArrayList.add(element, 0);
     }
