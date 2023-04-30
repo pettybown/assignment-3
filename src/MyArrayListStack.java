@@ -21,6 +21,12 @@ public class MyArrayListStack extends MyArrayList {
         }
         return myArrayList.remove(0);
     }
+    public Object peek() {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return myArrayList.get(0);
+    }
 
 
 }
