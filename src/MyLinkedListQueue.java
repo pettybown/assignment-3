@@ -9,4 +9,8 @@ public class MyLinkedListQueue<T> extends MyLinkedList {
     public int size() {
         return myLinkedList.size();
     }
+    public boolean isEmpty() {
+        return myLinkedList.size() == 0;
+    }
+
 }
