@@ -15,6 +15,13 @@ public class MyLinkedListQueue<T> extends MyLinkedList {
         }
         return (T) myLinkedList.remove(0);
     }
+    public T peek() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return (T) myLinkedList.get(0);
+    }
+
     public int size() {
         return myLinkedList.size();
     }
