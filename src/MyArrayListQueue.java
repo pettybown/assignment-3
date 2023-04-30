@@ -8,4 +8,7 @@ public class MyArrayListQueue extends MyArrayList{
     public void enqueue(Object element) {
         myArrayList.add(element);
     }
+    public boolean isEmpty() {
+        return myArrayList.size() == 0;
+    }
 }
