@@ -8,4 +8,7 @@ public class MyLinkedListStack<T> extends MyLinkedList {
     public void push(T element) {
         myLinkedList.add(element, 0);
     }
+    public boolean isEmpty() {
+        return myLinkedList.size() == 0;
+    }
 }
