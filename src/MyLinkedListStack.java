@@ -17,4 +17,10 @@ public class MyLinkedListStack<T> extends MyLinkedList {
         }
         return (T) myLinkedList.remove(0);
     }
+    public T peek() {
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return (T) myLinkedList.get(0);
+    }
 }
