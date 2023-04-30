@@ -5,6 +5,10 @@ public class MyLinkedListStack<T> extends MyLinkedList {
     MyLinkedListStack() {
         myLinkedList = new MyLinkedList<>();
     }
+    /**
+     * push() - method that adds an element to the top of the stack.
+     * @param element - element that you need to add.
+     */
     public void push(T element) {
         myLinkedList.add(element, 0);
     }
