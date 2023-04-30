@@ -20,5 +20,10 @@ public class MyArrayListQueue extends MyArrayList{
         }
         return myArrayList.remove(0);
     }
-
+    public Object peek() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return myArrayList.get(0);
+    }
 }
