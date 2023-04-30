@@ -11,4 +11,7 @@ public class MyArrayListQueue extends MyArrayList{
     public boolean isEmpty() {
         return myArrayList.size() == 0;
     }
+    public int size() {
+        return myArrayList.size();
+    }
 }
