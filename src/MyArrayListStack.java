@@ -12,6 +12,9 @@ public class MyArrayListStack extends MyArrayList {
     public boolean isEmpty() {
         return myArrayList.size() == 0;
     }
+    public int size() {
+        return myArrayList.size();
+    }
 
 
 }
