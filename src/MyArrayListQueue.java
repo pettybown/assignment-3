@@ -14,4 +14,11 @@ public class MyArrayListQueue extends MyArrayList{
     public int size() {
         return myArrayList.size();
     }
+    public Object dequeue() {
+        if (isEmpty()) {
+            throw new NoSuchElementException();
+        }
+        return myArrayList.remove(0);
+    }
+
 }
